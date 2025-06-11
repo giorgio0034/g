@@ -21,3 +21,15 @@ nav:hover {
     background-color: #e74c3c;
 }
 
+
+.flex{
+    background-color: yellow;
+}
+
+.articolo1{
+    width:60%;
+}
+
+nav li{
+    display: inline-block;
+}
