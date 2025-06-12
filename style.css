@@ -23,6 +23,8 @@ nav:hover {
 
 
 .flex{
+    display:flex;
+    align-items: center;
     background-color: yellow;
 }
 
