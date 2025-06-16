@@ -14,12 +14,20 @@ h3{
     background-color: yellow;
 }
 
-nav:hover {
+.logo:hover {
+   
     background-image: url(https://aulab.it/wp-content/uploads/2023/04/aulab-logo.svg);
+    max-width: 100px;
+    height:auto;
     background-repeat:no-repeat;
-    background-size:100%;
+    background-size: 100px;
     background-color: #e74c3c;
+
+    
 }
+
+
+
 
 
 .flex{
@@ -35,3 +43,26 @@ nav:hover {
 nav li{
     display: inline-block;
 }
+
+.box1{
+    position:fixed;
+    bottom:0px;
+    right:0px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    font-size: 10px;
+  }
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.box1{
+    max-width: 50%;
+    height:auto;
+}
+}
+ 
