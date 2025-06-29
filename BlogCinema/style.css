@@ -1,0 +1,27 @@
+.logo{
+    height:100%;
+    width:100%;
+   min-width: 100%;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    z-index: 100;
+}
+
+
+.container{
+    display:grid;
+    height:100px;
+    width:100px;
+    margin-top: auto;
+    border: 10%;
+
+}
