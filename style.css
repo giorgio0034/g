@@ -1,68 +1,46 @@
-.blue{
- font-family:Arial, Helvetica, sans-serif;
+.logo{
+    height:100%;
+    width:100%;
+   min-width: 100%;
+}
+h1{
+    letter-spacing: 10px;
+    font-size: 4rem;
 }
 
-.red {
-    font-family:"Cal Sans", sans-serif;
-}
-
-h1,h2,h3 {
-    color:green;
-} 
-
-h3{
-    background-color: yellow;
-}
-
-.logo:hover {
+header{
+    background-image: url(https://www.stateofmind.it/wp-content/uploads/2014/12/Cinema_Fotolia_59441801_Subscription_Monthly_M_-_KRAKEN.jpg);
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  top:50px;
+  position: relative;
    
-    background-image: url(https://aulab.it/wp-content/uploads/2023/04/aulab-logo.svg);
-    max-width: 100px;
-    height:auto;
-    background-repeat:no-repeat;
-    background-size: 100px;
-    background-color: #e74c3c;
+}   
 
+
+.navbar-expand-lg bg-body-tertiary{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    z-index: 100;
+}
+@media screen and (max-width:670px) {
+    h1{
+        font-size: 2rem;
+    }
     
 }
 
-
-
-
-
-.flex{
-    display:flex;
-    align-items: center;
-    background-color: yellow;
-}
-
-.articolo1{
-    width:60%;
-}
-
-nav li{
-    display: inline-block;
-}
-
-.box1{
-    position:fixed;
-    bottom:0px;
-    right:0px;
+.container{
+    display:grid;
+    height:100px;
+    width:100px;
+    margin-top: auto;
+    border: 10%;
 
 }
-
-@media only screen and (max-width: 600px) {
-  ul {
-    font-size: 10px;
-  }
-img{
-    max-width:100%;
-    height:auto;
-}
-
-.box1{
-    max-width: 50%;
-    height:auto;
-}
-}
- 
