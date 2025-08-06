@@ -1,0 +1,168 @@
+*{
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,h2,h3,.h1,.h2,.h3{
+  font-family: "Electrolize", s-serif;
+}
+/* Variabili */
+:root{
+    /* la variabili in CSS sono esattamente come delle proprietà, quinda una coppia chiave-valore */
+    --vi:rgb(93,39,101);
+    --bl:rgb(0,82,255);
+    --w:rgb(255,255,255);
+    --bd:rgb(4,6,51);
+    --y:rgb(255, 230,0);
+    --gr:rgb(45,45,45);
+}
+
+body{
+  background-color:var(--gr);
+  color:var(--w);
+}
+
+
+.bg-bl{
+  background-color:var(--bl);
+}
+
+.bg-vi{
+  background-color:var(--vi);
+}
+
+.bg-w{
+  background-color:var(--w);
+}
+
+.text-bl{
+  color:var(--bl);
+}
+
+.text-vi{
+  color:var(--vi);
+}
+
+.text-w{
+  color:var(--w);
+}
+.text-y{
+  color:var(--y)
+}
+
+
+/*Header*/
+.header-custom{
+  
+  height:80vh;
+  background-image: url("media/bg-1.jpg");
+  background-position:center;
+
+}
+
+
+h1,h4,p{
+  color:var(--w);
+}
+
+
+button{
+  color:yellow;
+}
+
+.section-custom{
+  height:80vh;
+  background-color:var(--bd);
+}
+
+.section-custom1{
+  
+  height:80vh;
+  background-image: url("media/bg-2.jpg");
+  background-position:center;
+
+}
+
+.form-custom{
+  background-color: var(--bd);
+  position:relative;
+  bottom: 10px;
+}
+
+.img-fluid2{
+  max-width: 50vh;
+  height:auto;
+  background-position: center;
+
+}
+
+.section-custom2{
+  background-color:var(--vi);
+}
+
+.section-custom3{
+  height: 80vh;
+  background-size:cover;
+  background-image: url("media/bg-3.jpg");
+
+}
+
+.flex {
+  position:relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+li {
+  list-style-type:disc;
+  color:var(--w);
+}
+
+p,ul,i{
+  margin:0;
+  padding:0;
+}
+
+.elemento2{
+  justify-content:center;
+  align-items: center;
+  margin-top:-5%;
+  margin-left:5%;
+}
+
+
+
+.form-custom{
+  margin-top: 60px;
+  padding:70px 20px;
+
+  background-color: var(--bd);
+}
+
+
+
+.calendar-form{
+  font-size:50px;
+  margin-right:20px;
+  background-color:var(--y);
+  border-radius:50%;
+  padding:10px 20px;
+}
+
+.section3-custom{
+  min-height: 70vh;
+  background-image: url(./media/bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.form-custom{
+  background-color:var(--bd);
+  padding:70px 20px;
+}
+
+input{
+  background-color: var(--bd);
+  border:none;
+  border-bottom: 1px solid var(--bd);
+}
