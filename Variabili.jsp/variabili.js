@@ -22,7 +22,27 @@ const PIGRECO= 3.14159265359;
 
 console.log(PIGRECO);
 
-PIGRECO=3.50;
 
-console.log(PIGRECO);
 
+
+/* Operatori 1 */
+
+let a;
+let b;
+let c;
+let d;
+let e;
+
+a=3;
+b=2;
+c=4;
+d=6;
+e=7; 
+let somma;
+let media;
+
+somma= (a+b+c+d+e);
+media= (a+b+c+d+e)/5;
+
+console.log('La somma tra i numeri equivale a', somma);
+console.log('la media equivale a', media);
