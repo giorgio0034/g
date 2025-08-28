@@ -46,3 +46,18 @@ media= (a+b+c+d+e)/5;
 
 console.log('La somma tra i numeri equivale a', somma);
 console.log('la media equivale a', media);
+
+/* Operatore 2 */
+
+const annocorrente= 2025;
+const annodinascita= 1980;
+
+
+let età;
+
+età= annocorrente-annodinascita;
+
+let arrivoaicento;
+arrivoaicento= 100 - età;
+
+console.log('Hai',età ,'e ti mancano',arrivoaicento ,'per compierne 100' );
