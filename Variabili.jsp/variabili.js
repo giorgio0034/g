@@ -61,3 +61,25 @@ let arrivoaicento;
 arrivoaicento= 100 - età;
 
 console.log('Hai',età ,'e ti mancano',arrivoaicento ,'per compierne 100' );
+
+
+
+/* Operatori 3 */
+let i = prompt(" Inserisci il primo numero");
+let l= prompt("Inserisci il secondo numero");
+let addizione;
+let sottrazione;
+let moltiplicazione;
+let potenza;
+
+i = Number(i);
+l = Number(l);
+
+addizione= i+l;
+sottrazione=i-l;
+moltiplicazione= i*l;
+potenza= i**l;
+
+console.log( 'Con i numeri da te scelti, i risultati delle varie operazioni sono: somma',addizione, 'sottrazione',sottrazione, 'moltiplicazione',moltiplicazione, 'potenza',potenza
+);
+
