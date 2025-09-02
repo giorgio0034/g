@@ -83,3 +83,23 @@ potenza= i**l;
 console.log( 'Con i numeri da te scelti, i risultati delle varie operazioni sono: somma',addizione, 'sottrazione',sottrazione, 'moltiplicazione',moltiplicazione, 'potenza',potenza
 );
 
+
+/*Operatori 4 */
+
+let numtotalegatti=25;
+let numgattiinfila=6;
+let modulo;
+
+
+let file= Math.ceil(numtotalegatti/numgattiinfila);
+
+let mancanti= Math.floor(numtotalegatti/numgattiinfila);
+modulo=numtotalegatti%numgattiinfila;
+
+console.log('Ci sono',file,'file di gatti e ne mancano',mancanti,'per una nuova fila',modulo,'rimane fuori');
+
+
+
+
+
+
