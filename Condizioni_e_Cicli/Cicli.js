@@ -1,7 +1,8 @@
+/*
 let v= 28;
 
 
-/*
+
 if(v<18){
     console.log('insufficente');
 }else if(v>=18 && v<21){
@@ -17,7 +18,7 @@ if(v<18){
 }else{
     console.log('voto non valido')
 }
-*/
+
 switch(true){
     case v<18:
         console.log('Insufficente');
@@ -39,4 +40,48 @@ switch(true){
         break;
     default:
         console.log("Voto non valido");
+}
+
+*/
+
+let t=prompt("Inserisci il numero della temperatura");
+
+/*
+if(t<-10){
+    console.log('copriti ancora ti raffreddi');
+
+}else if(t<0){
+    console.log('non è freddo quanto umido');
+
+}else if(t<20){
+    console.log('non ci sono più le mezze stagioni');
+}else if(t<30){
+    console.log('mi dia una peroni sudata');
+}else if(t>=30){
+    console.log('lu mare, lu sole, lu vientu');
+} else{
+    console.log('inserimento non valido');
+}
+
+*/
+
+switch(true){
+
+    case t<-10:
+       console.log('copriti ancora ti raffreddi');
+       break;
+    case t<0:
+        console.log('non è freddo quanto umido');
+        break;
+    case t<20:
+        console.log('non ci sono più le mezze stagioni');
+        break;
+    case t<30:
+        console.log('mi dia una peroni sudata');
+        break;
+    case t>=30:
+        console.log('lu mare, lu sole, lu vientu');
+        break;
+    default:
+        console.log('inserimento non valido');
 }
