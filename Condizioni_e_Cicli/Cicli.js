@@ -88,7 +88,7 @@ switch(true){
 }
 */
 
-
+/*
 let num = 2;
 let punteggio=0;
 
@@ -101,3 +101,34 @@ for(let i=0;i<=10;i++){
 
 }
 
+*/
+
+
+let punteggio_pari=0;
+let punteggio_dispari_totale=0;
+
+let punteggio_dispari=0;
+
+for(let i=0;i<10;i++){
+
+    punteggio_pari=2*i;
+    console.log(punteggio_pari);
+    
+    
+
+    
+}
+
+
+
+console.log('numeri pari');
+
+for(let i=0;i<10;i++){
+     punteggio_dispari=2*i+1;
+    console.log(punteggio_dispari);
+    punteggio_dispari_totale+=punteggio_dispari;
+}
+
+console.log(punteggio_dispari_totale/10);
+
+console.log('numeri dispari');
