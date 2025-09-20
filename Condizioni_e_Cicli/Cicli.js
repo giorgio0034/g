@@ -44,7 +44,7 @@ switch(true){
 
 */
 
-let t=prompt("Inserisci il numero della temperatura");
+//let t=prompt("Inserisci il numero della temperatura");//
 
 /*
 if(t<-10){
@@ -65,6 +65,7 @@ if(t<-10){
 
 */
 
+/*
 switch(true){
 
     case t<-10:
@@ -85,3 +86,18 @@ switch(true){
     default:
         console.log('inserimento non valido');
 }
+*/
+
+
+let num = 2;
+let punteggio=0;
+
+
+for(let i=0;i<=10;i++){
+   
+    punteggio=num*i;
+
+    console.log(punteggio);
+
+}
+
