@@ -103,7 +103,7 @@ for(let i=0;i<=10;i++){
 
 */
 
-
+/*
 let punteggio_pari=0;
 let punteggio_dispari_totale=0;
 
@@ -132,3 +132,24 @@ for(let i=0;i<10;i++){
 console.log(punteggio_dispari_totale/10);
 
 console.log('numeri dispari');
+
+*/
+
+
+let numero=prompt("Digita un numero");
+
+switch(true){
+
+    case numero==1:
+        console.log('E’ stata selezionata l’acqua');
+        break;
+
+    case numero==2:
+        console.log('E’ stata selezionata coca cola');
+        break;
+    case numero==3:
+        console.log('E’ stata selezionata birra');
+        break;
+    default:
+        console.log(prompt("Digita un numero"));
+    }
