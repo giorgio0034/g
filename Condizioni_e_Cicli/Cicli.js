@@ -135,21 +135,25 @@ console.log('numeri dispari');
 
 */
 
+let scelta;
+do {
+    scelta= Number(prompt('Inserisci la bevanda da prendere: 1- Acqua, 2- Coca Cola, 3- Birra'));
 
-let numero=prompt("Digita un numero");
 
-switch(true){
+switch (scelta){
 
-    case numero==1:
+    case 1:
         console.log('E’ stata selezionata l’acqua');
         break;
 
-    case numero==2:
+    case 2:
         console.log('E’ stata selezionata coca cola');
         break;
-    case numero==3:
+    case 3:
         console.log('E’ stata selezionata birra');
         break;
     default:
-        console.log(prompt("Digita un numero"));
+        console.log(prompt("scelta inseria non valida, riprova"));
     }
+    
+}while(scelta <1 || scelta>3);
