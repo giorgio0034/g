@@ -51,7 +51,7 @@ if (punteggioutente1 > punteggioutente2) {
 }
 */
 
-
+/*
 function stampa(n){
 
 
@@ -77,3 +77,32 @@ function stampa(n){
 }
 
 stampa(45);
+*/
+
+
+
+function stampa(n){
+
+
+
+    for(i=1;i<=n;i++){
+
+        if(n<=9){
+            console.log('1 cifra');
+        }else if(n>=10 && n <=99){
+            console.log('2 cifre');
+        }else if(n>=100 && n<=999){
+            console.log('3 cifre');
+        }else if(n>=1000 && n<=9999){
+            console.log('4 cifre')
+        } else if(n>=10000){
+            console.log('numero troppo grande');
+        }
+
+
+
+    }
+
+}
+
+stampa(1200000);
