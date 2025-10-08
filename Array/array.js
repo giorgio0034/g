@@ -112,7 +112,7 @@ stampa(1200000);
 
 
 
-
+/*
 let frase = 'i topi non avevano nipoti';
 
 let no_spazi = frase.replace(/\W/g, "");
@@ -142,3 +142,13 @@ console.log(splitted);
 
 
 palindroma(frase);
+
+*/
+
+let array1=[3, 7, -2, 5, 8, 1, 2, 5, 6, -4, 12, 25];
+
+
+    array1.sort((a,b)=> a-b);
+   
+    console.log(array1);
+
