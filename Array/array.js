@@ -79,7 +79,7 @@ function stampa(n){
 stampa(45);
 */
 
-
+/*
 
 function stampa(n){
 
@@ -106,3 +106,39 @@ function stampa(n){
 }
 
 stampa(1200000);
+
+
+*/
+
+
+
+
+let frase = 'i topi non avevano nipoti';
+
+let no_spazi = frase.replace(/\W/g, "");
+console.log(no_spazi);
+
+
+function palindroma(frase){
+
+
+
+
+let splitted= frase.split('').reverse().join('').replace(/\W/g, "");
+   
+    
+
+    if(no_spazi==splitted){
+        console.log('True');
+    } else{
+        console.log('False')
+  }
+   
+console.log(splitted);
+
+
+}
+
+
+
+palindroma(frase);
