@@ -145,10 +145,26 @@ palindroma(frase);
 
 */
 
-let array1=[3, 7, -2, 5, 8, 1, 2, 5, 6, -4, 12, 25];
+//let array1=[3, 7, -2, 5, 8, 1, 2, 5, 6, -4, 12, 25];
 
 
-    array1.sort((a,b)=> a-b);
+   // array1.sort((a,b)=> a-b);
    
-    console.log(array1);
+  //  console.log(array1);
 
+let a =[3, 5, 10, 2, 8];
+
+function Media(a){
+    
+    let somma= a.reduce((acc,number)=> acc+number);
+    let media= somma/a.length;
+
+    return media;
+}
+
+let media = Media(a);
+
+console.log(`la media è ${media}`);
+
+let minimo= Math.min(3,5,10,2,8);
+console.log(`il minimo è ${minimo}`);
