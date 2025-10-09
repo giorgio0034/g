@@ -166,6 +166,11 @@ let media = Media(a);
 
 console.log(`la media è ${media}`);
 
-let minimi= a.filter((number,i)=> a[i]<6);
 
-console.log(minimi);
+
+
+let minori= a.filter((number,i)=> a[i]<media);
+let maggiori= a.filter((number,i)=> a[i]>media);
+
+console.log(minori);
+console.log(maggiori);
