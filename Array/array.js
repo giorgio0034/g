@@ -166,5 +166,6 @@ let media = Media(a);
 
 console.log(`la media è ${media}`);
 
-let minimo= Math.min(3,5,10,2,8);
-console.log(`il minimo è ${minimo}`);
+let minimi= a.filter((number,i)=> a[i]<6);
+
+console.log(minimi);
