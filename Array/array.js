@@ -152,6 +152,7 @@ palindroma(frase);
    
   //  console.log(array1);
 
+/*
 let a =[3, 5, 10, 2, 8];
 
 function Media(a){
@@ -174,3 +175,24 @@ let maggiori= a.filter((number,i)=> a[i]>media);
 
 console.log(minori);
 console.log(maggiori);
+
+*/
+
+//Oggetti//
+
+let persona = {
+    'nome': 'Mario' ,
+    'cognome': 'Rossi' ,
+    'eta': 25,
+
+'saluta' : function(){
+        console.log('Ciao');
+
+        
+    }
+
+
+
+};
+    
+persona.saluta();
