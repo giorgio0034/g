@@ -196,3 +196,65 @@ let persona = {
 };
     
 persona.saluta();
+
+
+
+
+let rubrica = {
+  contacts: [
+      {nome: 'Nicola', telefono: '3331111111'},
+      {nome: 'Lorenzo', telefono: '3332222222'},
+     {nome: 'Paola', telefono: '3333333333'},
+      {nome: 'Jenny', telefono: '3334444444'}
+  ],
+ 
+ mostra_contatti: function(){
+    this.contacts.forEach((contacts)=> console.log(contacts));
+ },
+ mostra_singolo_contatto: function(){
+    console.log(this.contacts[1]);
+ },
+
+ aggiungi_contatto: function(nome_contatto, n_telefono){
+        this.contacts.push({nome:nome_contatto,telefono:n_telefono});
+ },
+
+  rimuovi_contatto: function(contatto_rimosso, n_telefono_rimosso) {
+   let index =this.contacts.findIndex(contatto =>
+    contatto.nome === contatto_rimosso && contatto.telefono === n_telefono_rimosso
+  );
+  if (index !== -1) {
+    this.contacts.splice(index, 1);
+  }
+},
+
+modifica_contatto: function(nome_vecchio, telefono_vecchio, nuovo_nome, nuovo_telefono) {
+  let index = this.contacts.findIndex(contatto =>
+    contatto.nome === nome_vecchio && contatto.telefono === telefono_vecchio
+  );
+
+  if (index !== -1) {
+    this.contacts[index].nome = nuovo_nome;
+    this.contacts[index].telefono = nuovo_telefono;
+  } else {
+    console.log("Contatto non trovato");
+  }
+}
+
+};
+
+
+
+
+rubrica.mostra_contatti();
+rubrica.mostra_singolo_contatto();
+
+
+rubrica.aggiungi_contatto('Giorgio', '343939');
+
+
+rubrica.rimuovi_contatto('Nicola','3331111111');
+
+
+rubrica.modifica_contatto('Lorenzo','3332222222', 'Giacomo', '33244234' );
+console.log(rubrica.contacts)
