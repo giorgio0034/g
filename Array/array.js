@@ -179,7 +179,7 @@ console.log(maggiori);
 */
 
 //Oggetti//
-
+/*
 let persona = {
     'nome': 'Mario' ,
     'cognome': 'Rossi' ,
@@ -258,3 +258,98 @@ rubrica.rimuovi_contatto('Nicola','3331111111');
 
 rubrica.modifica_contatto('Lorenzo','3332222222', 'Giacomo', '33244234' );
 console.log(rubrica.contacts)
+
+*/
+
+let bowling = {
+    players: [
+        {name: 'Livio', scores: []},
+        {name: 'Paola', scores: []},
+        {name: 'Filippo', scores: []},
+        {name: 'Giuseppe', scores: []},
+    ],
+
+
+    punteggi_casuali: function() {
+        this.players.forEach(player => {
+            player.scores = Array.from({ length: 10 }, () =>
+                Math.floor(Math.random() * (10 - 1 + 1)) + 1);
+
+            console.log(`${player.name}: ${player.scores.join(", ")}`);
+
+          
+
+           
+            
+        });
+    },
+    punteggio_finale : function(){
+     this.players.forEach(player => {
+      player.totale = player.scores.reduce((acc, n) => acc + n, 0);
+      console.log(`${player.name}: ${player.scores.join(", ")} → Totale = ${player.totale}`);
+          })
+
+           let totali = this.players.map(player =>player.totale);
+
+
+        let punteggioMassimo = Math.max(...totali);
+
+    // 5️⃣ Trova il giocatore (o i giocatori) con il punteggio massimo
+    let vincitori = this.players.filter(player => player.totale === punteggioMassimo);
+
+    // 6️⃣ Stampa il vincitore o i vincitori
+    if (vincitori.length === 1) {
+      console.log(`🏆 Il vincitore è ${vincitori[0].name} con ${punteggioMassimo} punti!`);
+    } else {
+      console.log(`🤝 Pareggio tra: ${vincitori.map(p => p.name).join(", ")} con ${punteggioMassimo} punti!`);
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+ aggiungi_giocatore : function(nome, punteggio){
+    this.players.push({name: nome , scores: punteggio} );
+ },
+
+
+
+
+
+
+
+
+}
+
+bowling.aggiungi_giocatore('Giorgio');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bowling.punteggi_casuali();
+
+bowling.punteggio_finale();
+
