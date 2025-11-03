@@ -60,13 +60,16 @@ let paragrafi=document.querySelectorAll('p');
 let button1 = document.querySelector('#button1');
 let button2 = document.querySelector('#button2');
 let button3 = document.querySelector('#button3');
+let button4 = document.querySelector('#button4');
+let h1= document.querySelector('h1');
+let time= document.querySelector('time')
+console.dir(time);
 
 
 
 
 
-
-
+/*
 button3.addEventListener('click',()=>{
 paragrafi.forEach((p)=>{
     p.classList.toggle('custom-paragraph');
@@ -94,5 +97,22 @@ paragrafi.forEach((p)=>{
    
 
 });
+});
+*/
+button4.addEventListener('click',()=>{
+
+  let h1= document.querySelector('h1');
+  let textarea= document.querySelector('textarea');
+  let time= document.querySelector('time');
+    
+    h1.innerHTML='Titolo Articolo';
+    textarea.innerHTML='Contenuto dellarticolo';
+    let event = new Date("05 October 2011 14:48 UTC");
+    console.log(event.toString());
+    time.textContent = event.toString();
+    
+
+
+  
 });
 
