@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubrica di Giorgio</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="dom2.css">
+</head>
+<body>
+
+
+<h1 class="custom-shadow">Benvenuti nella mia rubrica</h1>
+
+
+<header class="container">
+    <div class="row">
+        <div class="col-12">
+
+            <h1 class="text-center">Rubrica di Giorgio</h1>
+        </div>
+    </div>
+
+</header>
+
+
+<section class="container-fluid my-5">
+    <div class="row">
+        <article class="col-12 col-md-4">
+
+            <h1 class="text-center mb-3">Mostra contatti in rubrica</h1>
+            <button id="showContactsbtn" class="btn btn-custom"> Mostra Contatti</button>
+        </article>
+
+        <article class="col-12 col-md-4">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <h3 class="text-center">Aggiungi Nuovo Contatto</h3>
+                </div>
+
+                <div class="col 4">
+                    <div class="input-group mb-3">
+                        <input type="text" id="nameInput" class="form-control" placeholder="Username" value="">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="number" id="numberInput" class="form-control" placeholder="Phone Number" value="">
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <button id="addContactbtn" class="btn btn-custom"> Aggiungi Contatti</button>
+                    <button id="removeContactbtn" class="btn btn-custom mt-2"> Rimuovi Contatti</button>
+                    <button id="Editbtn" class="btn btn-custom mt-2"> Modifica Contatti</button>
+                </div>
+            </div>
+
+
+  
+        </article>
+
+        <article class="col-12 col-md-4">
+
+            Cerca contatti
+        </article>
+    </div>
+
+
+</section>
+
+<section class="container">
+    <div class="row justify-content-center">
+        <article id="contactsWrapper" class="col-12 col-md-8">
+          <!--  <div class="card-custom">
+               <p class="lead">Nome</p>
+                <p>3333333333</p>
+                <i class="fa-sharp-duotone fa-solid fa-trash fa-1.5x icon"></i> --> 
+            </div>
+
+            
+        </article>
+    </div>
+</section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+     <script src="https://kit.fontawesome.com/ca00db3b51.js" crossorigin="anonymous"></script>
+
+
+
+  <script src="dom2.js"></script>  
+    
+</body>
+</html>

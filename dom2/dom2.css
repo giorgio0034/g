@@ -1,0 +1,46 @@
+
+body{
+    background-color: black;
+    color: rgb(0,255,65);
+}
+
+.custom-shadow{
+    box-shadow: 2px 2px 5px #ADFF2F;
+}
+
+.btn-custom{
+    height:100px;
+    width:200px;
+    color:green;
+    background-color: trasparent;
+    border:2px solid green;
+    display:block;
+    margin: auto;
+}
+
+.btn-custom:hover{
+    color:black;
+    background-color:green;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.card-custom{
+    box-shadow: 2px 2px 5px #ADFF2F, -2px -2px 5px #ADFF2F;
+    height: 50px;
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.icon{
+    cursor:pointer;
+}
